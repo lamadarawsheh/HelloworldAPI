@@ -40,17 +40,21 @@ is a simple API that consists of 2 endpoints :
 
 3-to install required dependencies run 
          npm install        
+
 4- adjust this line of code in index.ts if needed to accomodate to your application requirement since this port maybe occupied 
     <img width="447" alt="Screenshot 2024-09-02 at 6 58 36 PM" src="https://github.com/user-attachments/assets/2417be29-8047-4033-a4b4-1fca2dc64bcf">
     
 5-Start the Server by running this command:
         npm start
+
 6-test the endpoints using postman for example
 
 -test firstendpoint :
    GET http://localhost:3000/hello?name=YourName
+   
 if no name is provided use:
    GET http://localhost:3000/hello
+   
 -test secondendpoint :  
    GET  http://localhost:3000/info
 
