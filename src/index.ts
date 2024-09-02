@@ -3,9 +3,6 @@ import os from 'os';
 
 const app = express();
 const port = 3000;
-app.use(express.json());
-
-app.set('trust proxy', true);
 
 app.get('/hello', (req: Request, res: Response) => {
     
@@ -19,11 +16,7 @@ app.get('/info', (req: Request, res: Response) => {
         const request_time  = new Date().toISOString();
         const host_name = os.hostname();
         const client_address = req.ip;
-        
-        const headers = {
-          'Accept': req.headers['accept'],
-          'User-agent': req.headers['user-agent']
-      };
+        const headers = req.headers;
         res.setHeader ('content-Type',`application/json`);
         res.json({request_time,client_address,host_name,headers });
   });
