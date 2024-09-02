@@ -34,8 +34,10 @@ is a simple API that consists of 2 endpoints :
     
 --Installing :
     to run HelloworldAPI locally follow these steps:
+    
 1-clone the repository
         git clone https://github.com/lamadarawsheh/HelloworldAPI.git
+        
 2- cd helloworldapi
 
 3-to install required dependencies run 
