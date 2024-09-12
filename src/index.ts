@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import os from 'os';
+import getRealClientIPAddress from './client';
 
 const app = express();
 const port = 3000;
@@ -15,7 +16,7 @@ app.get('/info', (req: Request, res: Response) => {
     
         const request_time  = new Date().toISOString();
         const host_name = os.hostname();
-        const client_address = req.ip;
+        const client_address = getRealClientIPAddress(req);
         const headers = req.headers;
         res.setHeader ('content-Type',`application/json`);
         res.json({request_time,client_address,host_name,headers });
