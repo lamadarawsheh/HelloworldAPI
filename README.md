@@ -62,7 +62,8 @@ if no name is provided use:
    GET  http://localhost:3000/info
 
 And that's it, you ran HElloworldAPI  successfully  .
-**Run Teses**
+<br>
+--**Run Teses**
 -in order to run tests just run the following command on you terminal :
     npm test
 
