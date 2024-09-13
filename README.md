@@ -63,8 +63,11 @@ if no name is provided use:
 
 And that's it, you ran HElloworldAPI  successfully  .
 <br>
+
 --**Run Teses**
--in order to run tests just run the following command on you terminal :
+
+--in order to run tests just run the following command on you terminal :
+
     npm test
 
         
